@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Page</title>
+    <link rel="stylesheet" href="price.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="pricing-section">
+            <h1>Pricing Plans</h1>
+            <div class="pricing-container">
+                <div class="pricing-card">
+                    <h2>Basic</h2>
+                    <p>$9.99/month</p>
+                    <ul>
+                        <li>1 User</li>
+                        <li>10GB Storage</li>
+                        <li>Basic Support</li>
+                    </ul>
+                    <button class="btn">Sign Up</button>
+                </div>
+                <div class="pricing-card">
+                    <h2>Premium</h2>
+                    <p>$19.99/month</p>
+                    <ul>
+                        <li>5 Users</li>
+                        <li>50GB Storage</li>
+                        <li>Premium Support</li>
+                    </ul>
+                    <button class="btn">Sign Up</button>
+                </div>
+                <div class="pricing-card">
+                    <h2>Enterprise</h2>
+                    <p>$49.99/month</p>
+                    <ul>
+                        <li>10 Users</li>
+                        <li>100GB Storage</li>
+                        <li>Enterprise Support</li>
+                    </ul>
+                    <button class="btn">Sign Up</button>
+                </div>
+            </div>
+            <div class="toggle-container">
+                <label for="toggle">Monthly/Yearly</label>
+                <input type="checkbox" id="toggle">
+                <div class="toggle-slider"></div>
+            </div>
+            <div class="currency-container">
+                <label for="currency">Currency:</label>
+                <select id="currency">
+                    <option value="USD">$ USD</option>
+                    <option value="EUR">€ EUR</option>
+                    <option value="GBP">£ GBP</option>
+                </select>
+            </div>
+            <div class="unit-container">
+                <label for="unit">Unit:</label>
+                <select id="unit">
+                    <option value="GB">GB</option>
+                    <option value="TB">TB</option>
+                    <option value="MB">MB</option>
+                </select>
+            </div>
+        </section>
+    </main>
+    <script src="price.js"></script>
+</body>
+</html>
